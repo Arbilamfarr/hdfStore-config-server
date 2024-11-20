@@ -1,16 +1,9 @@
 server:
-  port: 8888
-
+  port: 1001
 spring:
   application:
-    name: config-server-service
-  boot:
-    admin:
-      client:
-        url: ${ADMIN_SERVER:http://localhost:9091 }
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/Arbilamfarr/config-server.git
-          clone-on-start: true
+    name: stock-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/stock_db
+    username: postgres
+    password: root
