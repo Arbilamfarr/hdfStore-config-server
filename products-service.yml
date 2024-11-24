@@ -1,5 +1,5 @@
 server:
-  port: 1004
+  port: 5896
 spring:
   application:
     name: products-service
